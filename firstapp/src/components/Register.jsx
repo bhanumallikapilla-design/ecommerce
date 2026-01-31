@@ -17,7 +17,7 @@ export default function Register() {
     console.log(newUser)
     console.log(import.meta.env)
 
-    axios.post("http://localhost:4000/api/create-user",newUser)
+    axios.post("https://ecommerce-1-e6n5.onrender.com/api/create-user",newUser)
       .then((res)=>{
         console.log(res.data)
         if(res.data.status===201){
